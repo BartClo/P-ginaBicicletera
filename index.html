@@ -13,7 +13,7 @@
       <h1>Rueda Libre - Tienda de Bicicletas</h1>
       <nav>
         <ul>
-          <li><a href="#productos">Productos</a></li>
+
           <li><a href="carrito.html"><i class="fas fa-shopping-cart"></i> Carrito</a></li>
         </ul>
       </nav>
@@ -25,11 +25,11 @@
       <h2>Nuestros Productos</h2>
       
       <div class="categorias-container">
-        <div class="categoria">
+        <div class="categoria1">
           <h3><i class="fas fa-bicycle"></i> Bicicletas Urbanas</h3>
           <div class="productos-container">
             <div class="producto">
-              <img src="#" alt="Bicicleta Urbana" >
+              <img src="imagenes/bicicleta.png" alt="Bicicleta Urbana" >
               <h4>Bici Urbana Pro</h4>
               <p>Ideal para la ciudad. Ligera y cómoda con cuadro de aluminio y cambios integrados.</p>
               <p class="precio">$300.000</p>
@@ -39,11 +39,11 @@
           </div>
         </div>
 
-        <div class="categoria">
+        <div class="categoria2">
           <h3><i class="fas fa-mountain"></i> Bicicletas Montaña</h3>
           <div class="productos-container">
             <div class="producto">
-              <img src="#" alt="Bicicleta Montaña" >
+              <img src="imagenes/bicicletamontaña.png" alt="Bicicleta Montaña" >
               <h4>Montañera X</h4>
               <p>Suspensión delantera, frenos de disco hidráulicos y cuadro de carbono.</p>
               <p class="precio">$420.000</p>
@@ -53,17 +53,32 @@
           </div>
         </div>
 
-        <div class="categoria">
+        <div class="categoria3">
           <h3><i class="fas fa-helmet-safety"></i> Accesorios</h3>
           <div class="productos-container">
             <div class="producto">
-              <img src="#" alt="Casco" >
+              <img src="imagenes/casco.png" alt="Casco" >
               <h4>Casco Pro</h4>
               <p>Ventilación optimizada, sistema de ajuste dial y certificación de seguridad.</p>
               <p class="precio">$45.000</p>
               <button onclick="agregarAlCarrito('Casco Pro', 45000)">Agregar al carrito</button>
             </div>
 
+            <div class="producto">
+              <img src="imagenes/pedales.png" alt="Pedales" >
+              <h4>Kit de Pedales</h4>
+              <p>Pedales para mayor agarre, excelente calidad y comoda para tu pie</p>
+              <p class="precio">$50.000</p>
+              <button onclick="agregarAlCarrito('Pedales', 50000)">Agregar al carrito</button>
+            </div>
+
+            <div class="producto">
+              <img src="imagenes/repuestos.png" alt="Repuestos" >
+              <h4>Kit de Repuestos</h4>
+              <p>Kit de repuestos completos para tu bicicleta</p>
+              <p class="precio">$60.000</p>
+              <button onclick="agregarAlCarrito('Kit de Repuestos', 60000)">Agregar al carrito</button>
+            </div>
           </div>
         </div>
       </div>
