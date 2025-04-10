@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda Rueda Libre</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <h1>Rueda Libre - Tienda de Bicicletas</h1>
+      <nav>
+        <ul>
+          <li><a href="#productos">Productos</a></li>
+          <li><a href="carrito.html"><i class="fas fa-shopping-cart"></i> Carrito</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="productos">
+      <h2>Nuestros Productos</h2>
+      
+      <div class="categorias-container">
+        <div class="categoria">
+          <h3><i class="fas fa-bicycle"></i> Bicicletas Urbanas</h3>
+          <div class="productos-container">
+            <div class="producto">
+              <img src="#" alt="Bicicleta Urbana" >
+              <h4>Bici Urbana Pro</h4>
+              <p>Ideal para la ciudad. Ligera y cómoda con cuadro de aluminio y cambios integrados.</p>
+              <p class="precio">$300.000</p>
+              <button onclick="agregarAlCarrito('Bici Urbana Pro', 300000)">Agregar al carrito</button>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="categoria">
+          <h3><i class="fas fa-mountain"></i> Bicicletas Montaña</h3>
+          <div class="productos-container">
+            <div class="producto">
+              <img src="#" alt="Bicicleta Montaña" >
+              <h4>Montañera X</h4>
+              <p>Suspensión delantera, frenos de disco hidráulicos y cuadro de carbono.</p>
+              <p class="precio">$420.000</p>
+              <button onclick="agregarAlCarrito('Montañera X', 420000)">Agregar al carrito</button>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="categoria">
+          <h3><i class="fas fa-helmet-safety"></i> Accesorios</h3>
+          <div class="productos-container">
+            <div class="producto">
+              <img src="#" alt="Casco" >
+              <h4>Casco Pro</h4>
+              <p>Ventilación optimizada, sistema de ajuste dial y certificación de seguridad.</p>
+              <p class="precio">$45.000</p>
+              <button onclick="agregarAlCarrito('Casco Pro', 45000)">Agregar al carrito</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Rueda Libre - Todos los derechos reservados</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
