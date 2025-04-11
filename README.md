@@ -10,7 +10,7 @@ Rueda Libre es una tienda en línea de bicicletas con un catálogo de productos 
 
 ## Descripción
 
-Este proyecto es una plataforma de comercio electrónico enfocada en la venta de bicicletas. Está construida con Html, CSS y JavaScript.
+Este proyecto es una plataforma de comercio electrónico enfocada en la venta de bicicletas. Está construida con Html, CSS y JavaScript. 
 
 ## Instalación
 
@@ -18,11 +18,14 @@ Este proyecto es una plataforma de comercio electrónico enfocada en la venta de
     ```bash
     git clone https://github.com/BartClo/P-ginaBicicletera.git
     ```
+2. No es necesario instalar dependencias adicionales, ya que el proyecto está basado en archivos estáticos. Solo asegúrate de tener un servidor local si deseas correrlo localmente (puedes usar herramientas como Live Server en Visual Studio Code).
 
 
 ## Uso
-Una vez que el proyecto esté localmente, podrás acceder a la tienda a través de un 'live server' dentro de tú IDE para poder entrar a la página, también es posible acceder mediante el siguiente link `https://bartclo.github.io/P-ginaBicicletera/`.
-Destacar que no está integrado a alguna base de datos por lo que solo se guardan localmente las acciones realizadas en la página web.
+Una vez que el proyecto está corriendo localmente, podrás acceder a la tienda a través de tu servidor local o directamente mediante el siguiente enlace:
+https://bartclo.github.io/P-ginaBicicletera/
+
+Nota: No está integrado a una base de datos, por lo que solo se guardan localmente las acciones realizadas en la página web.
 
 
 
