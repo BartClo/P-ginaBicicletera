@@ -20,11 +20,6 @@ Este proyecto es una plataforma de comercio electrónico enfocada en la venta de
     ```
 
 
-2. Inicia la aplicación:
-    ```bash
-    npm start
-    ```
-
 ## Uso
 
 Una vez que el proyecto está corriendo localmente, podrás acceder a la tienda a través de `http://localhost:3000`, tambíen es posible acceder mediante el siguiente link `https://bartclo.github.io/P-ginaBicicletera/`.
