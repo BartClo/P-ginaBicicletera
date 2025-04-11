@@ -5,31 +5,57 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pago - Rueda Libre</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
   <header>
-    <h1>Formulario de Pago</h1>
+    <div class="header-container">
+      <h1>Formulario de Pago</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+          <li><a href="carrito.html"><i class="fas fa-shopping-cart"></i> Carrito</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main>
     <section id="pago">
       <h2>Pago Electrónico</h2>
+      
+      <div class="resumen-carrito">
+        <h3>Resumen de tu compra</h3>
+        <div id="resumen-productos"></div>
+        <div class="resumen-total">Total: $<span id="resumen-total">0</span></div>
+      </div>
+      
       <form onsubmit="return procesarPago(event)">
         <label>Nombre Completo:
           <input type="text" required>
         </label>
+        
         <label>Número de Tarjeta:
-          <input type="text" maxlength="16" required>
+          <input type="text" maxlength="16" required placeholder="1234 5678 9012 3456">
         </label>
-        <label>Vencimiento:
-          <input type="month" required>
-        </label>
-        <label>CVV:
-          <input type="text" maxlength="3" required>
-        </label>
+        
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+          <label>Vencimiento:
+            <input type="month" required>
+          </label>
+          
+          <label>CVV:
+            <input type="text" maxlength="3" required placeholder="123">
+          </label>
+        </div>
+        
         <div class="botones-pago">
-          <button type="submit" class="boton boton-pagar">Pagar</button>
-          <a href="carrito.html" class="boton boton-volver">Volver al Carrito</a>
+          <button type="submit" class="boton boton-pagar">
+            <i class="fas fa-credit-card"></i> Pagar
+          </button>
+          <a href="carrito.html" class="boton boton-volver">
+            <i class="fas fa-arrow-left"></i> Volver al Carrito
+          </a>
         </div>
       </form>
       <p id="mensaje-pago"></p>
